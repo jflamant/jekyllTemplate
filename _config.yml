@@ -1,0 +1,54 @@
+name: "Jan-Willem van de Meent @ robots.ox.ac.uk"
+url: http://www.robots.ox.ac.uk
+baseurl: 
+permalink: /:year/:month/:day/:title
+timezone: Europe/London
+
+navigation:
+- text: About
+  url: /index.html
+- text: Publications
+  url: /publications/index.html
+
+markdown: kramdown
+mathjax: true
+katex: true # Enable if using math markup
+
+# Icons
+theme:
+  rss: false
+  email_address: "julien.flamant_at_phd.ec-lille.fr" # Full email address, e.g. "sam@example.com"
+  behance:
+  bitbucket:
+  dribbble:
+  facebook:
+  flickr:
+  github: "jflamant"
+  google_plus:
+  instagram:
+  linkedin:  # Full URL
+  pinterest:
+  reddit:
+  soundcloud:
+  stack_exchange:  # Full URL
+  steam:
+  tumblr:
+  twitter: 
+  wordpress:
+  youtube:
+
+
+scholar:
+  style: apa
+  locale: en
+  bibliography_template: bibliography
+  order: descending
+  group_by: type
+  type_order: [preprint, article, inproceedings, thesis,techreport]
+
+  sort_by: year
+  source: ./_bibliography
+  bibliography: flamant.bib
+  type_names: {preprint => 'Preprints'}
+  replace_strings: True
+  repository: assets/pdf

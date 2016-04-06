@@ -1,0 +1,28 @@
+---
+title: About
+layout: default
+---
+<div id="photo-well" class="pull-right well container" style="background-color: #EEF0F2">
+  <img alt="photo" src="{{site.baseurl}}/assets/images/avatar.jpg">
+  <div>
+        
+    {% capture contact %}{% include contact.md %}{% endcapture %}
+    {{ contact | markdownify }}
+  </div>
+</div>
+<div>
+  
+
+  <h1>
+    ABOUT
+  </h1>
+  {% capture bio %}{% include bio.md %}{% endcapture %}
+  {{ bio | markdownify }}
+</div>
+<div style="margin-top: 100px">
+  <a href="http://www.ox.ac.uk"> <img class='logo' alt="Lille1logo" src="{{site.baseurl}}/assets/images/univLilleLogo.png" height=50px align="bottom" style='margin-right: 30px'></a>
+
+  <a href="http://www.ox.ac.uk"><img class='logo'alt="Cristallogo" src="{{site.baseurl}}/assets/images/cristallogo.png" height=50px align="bottom" style='margin-right: 30px'></a>
+  <a href="http://www.ox.ac.uk"> <img class='logo' alt="Centralelogo" src="{{site.baseurl}}/assets/images/ec_lille.png" height=50px align="bottom"></a>
+
+</div>

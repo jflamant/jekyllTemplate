@@ -1,0 +1,28 @@
+<div class="row" style='padding-bottom: 20px'>
+  
+
+
+
+</div>
+<div class="row">
+    <div class="title pull-left">
+      Julien Flamant
+    </div>
+    <ul class="nav nav-pills pull-right">
+      {% for link in site.navigation %}
+      {% capture url %}{{site.baseurl}}{{link.url}}{% endcapture %}
+      <li {% if page.url == link.url %}class="active"{% endif %}>
+        <a href="{{url}}" title="{{link.title}}">{{link.text}}</a>
+      </li>
+      <!-- class="active"><a href="/">About</a></li> -->
+      <!-- <li><a href="/projects">Projects</a></li> -->
+      <!-- <li><a href="/publications">Publications</a></li> -->
+      {% endfor %}
+      <!-- Social icons from Font Awesome, if enabled -->
+      {% include icons.html %}
+    </ul>
+</div>
+
+<script>
+  $()
+</script>

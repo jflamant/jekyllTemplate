@@ -1,0 +1,36 @@
+---
+---
+All References
+==========
+@preprint{lebihan2015diffusive,
+	Abstract = {This paper considers the problem of estimating probability density functions on the rotation group $SO(3)$. Two distinct approaches are proposed, one based on characteristic functions and the other on wavelets using the heat kernel. Expressions are derived for their Mean Integrated Squared Errors. The performance of the estimators is studied numerically and compared with the performance of an existing technique using the De La Vallee Poussin kernel estimator. The heat-kernel wavelet approach appears to offer the best convergence, with faster convergence to the optimal bound and guaranteed positivity of the estimated probability density function.},
+	author = {Le Bihan, Nicolas and Flamant, Julien and Manton, Jonathan H. },
+	Journal = {submitted},
+	Keywords = {Probability density estimation, Rotation group SO(3), Diffusive wavelets, Characteristic function, Kernel estimators, Mean Integrated Square Error (MISE), Mixture of densities},
+	Note = {},
+	Title = {Density estimation on the rotation group using diffusive wavelets},
+	Year = {2015},
+  arxiv={http://arxiv.org/abs/1512.06023}}
+
+@preprint{flamant2016spherical,
+  Abstract= {In 3D single particle imaging with X-ray free-electron lasers, particle orientation is not recorded during measurement but is instead recovered as a necessary step in the reconstruction of a 3D image from the diffraction data. Here we use harmonic analysis on the sphere to cleanly separate the angu- lar and radial degrees of freedom of this problem, providing new opportunities to efficiently use data and computational resources. We develop the Expansion-Maximization-Compression algorithm into a shell-by-shell approach and implement an angular bandwidth limit that can be gradually raised during the reconstruction. We study the minimum number of patterns and minimum rotation sampling required for a desired angular and radial resolution. These extensions provide new av- enues to improve computational efficiency and speed of convergence, which are critically important considering the very large datasets expected from experiment.},
+  title={A spherical harmonic approach to single particle imaging with X-ray lasers},
+  author={Flamant, Julien and Le Bihan, Nicolas and Martin, Andrew V and Manton, Jonathan H},
+  journal={submitted},
+  year={2016},
+  code={http://github.com/jflamant/sphericalEMC},
+  arxiv={http://arxiv.org/abs/1602.01301}
+}
+
+
+
+@thesis{flamant2015masterthesis,
+  Abstract={The ability to decipher the three-dimensional structures of biomolecules at high resolution will greatly improve our understanding of the biological machinery. To this aim, X-ray crystallography has been used by scientists for several decades with tremendous results. This imaging method however requires a crystal to be grown, and for most interesting biomolecules (proteins, viruses) this may not be possible. The single-particle experiment was proposed to address these limitations, and the recent advent of ultra-bright X-ray Free Electron Lasers (XFELs) opens a new set of opportunities in biomolecular imaging. 
+
+In the single-particle experiment, thousands of diffraction patterns are recorded, where each image corresponds to an unknown, random orientation of individual copies of the biomolecule. These noisy, unoriented two-dimensional diffraction patterns need to be then assembled in three-dimensional space to form the three-dimensional intensity function, which characterizes completely the three-dimensional structure of the biomolecule. 
+
+This work focuses on geometrical variations of an existing algorithm, the Expansion-Maximization-Compression (EMC) algorithm introduced by Loh and Elser. The algorithm relies upon an expec-tation-maximization method, by maximizing the likelihood of an intensity model with respect to the diffraction patterns. The contributions of this work are (i) the redefinition of the EMC algorithm in a spherical design, motivated by the intrinsic properties of the intensity function, (ii) the utilisation of an orthonormal harmonic basis on the three-dimensional ball which allows a sparse representation of the intensity function, (iii) the scaling of the EMC parameters with the desired resolution, increasing computational speed and (iv) the intensity error is analysed with respect to the EMC parameters.},
+  title={Three-dimensional intensity reconstruction in single-particle experiments: a spherical symmetry approach},
+  author={Flamant, Julien},
+  year={2015}
+}
